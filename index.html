@@ -1,0 +1,19 @@
+<html>
+<head>
+    <!-- Link to the Tableau Embedding API          -->
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+    <!-- Include a reference to JQuery              -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Include a reference to our JavaScript code  -->
+    <script type="module" src="main.js"></script>
+</head>
+<!-- HTML for the embedded dashboard -->
+<body style="background-color: #000000;">
+    <br>
+    <div style="text-align: center;">
+        <!-- Embed the Tableau dashboard from Tableau public -->
+        <tableau-viz id="tableauViz1" toolbar="hidden" src='https://public.tableau.com/views/ISStracker_v2/ISSLocation'>
+        </tableau-viz>
+    </div>
+</body>
+</html>
